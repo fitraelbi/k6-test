@@ -12,7 +12,7 @@ export const options = {
     },
     negatif: {
         executor: 'constant-vus',
-        exec: 'positif',
+        exec: 'negatif',
         vus: 1,
         duration: '5m',
     },
