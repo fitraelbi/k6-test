@@ -21,7 +21,7 @@ export const options = {
 
 export function positif() {
   http.get('http://test2.fitraelbi.xyz/');
-  sleep(2)
+//   sleep(2)
 }
 
 export function negatif() {
