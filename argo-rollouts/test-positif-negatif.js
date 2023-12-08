@@ -10,14 +10,12 @@ export const options = {
       vus: 1,
       duration: '5m',
     },
-    // negatif: {
-    //   executor: 'per-vu-iterations',
-    //   exec: 'negatif',
-    //   vus: 50,
-    //   iterations: 100,
-    //   startTime: '30s',
-    //   maxDuration: '1m',
-    // },
+    negatif: {
+        executor: 'constant-vus',
+        exec: 'positif',
+        vus: 1,
+        duration: '5m',
+    },
   },
 };
 
@@ -26,6 +24,7 @@ export function positif() {
   sleep(3)
 }
 
-// export function negatif() {
-//   http.get('http://test2.fitraelbi.xyz/salah');
-// }
+export function negatif() {
+  http.get('http://test2.fitraelbi.xyz/salah');
+  sleep(60)
+}
