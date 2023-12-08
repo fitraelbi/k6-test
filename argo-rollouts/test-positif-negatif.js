@@ -8,20 +8,20 @@ export const options = {
       executor: 'constant-vus',
       exec: 'positif',
       vus: 1,
-      duration: '5m',
+      duration: '3m',
     },
     negatif: {
         executor: 'constant-vus',
         exec: 'negatif',
         vus: 1,
-        duration: '5m',
+        duration: '3m',
     },
   },
 };
 
 export function positif() {
   http.get('http://test2.fitraelbi.xyz/');
-  sleep(3)
+  sleep(2)
 }
 
 export function negatif() {
