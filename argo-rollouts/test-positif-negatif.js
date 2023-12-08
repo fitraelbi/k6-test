@@ -1,4 +1,5 @@
 import http from 'k6/http';
+import { sleep } from 'k6';
 
 export const options = {
   discardResponseBodies: true,
@@ -22,7 +23,7 @@ export const options = {
 
 export function positif() {
   http.get('http://test2.fitraelbi.xyz/');
-  Sleep(3)
+  sleep(3)
 }
 
 // export function negatif() {
