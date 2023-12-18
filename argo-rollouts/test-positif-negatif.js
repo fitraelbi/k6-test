@@ -3,6 +3,7 @@ import { sleep } from 'k6';
 
 export const options = {
   discardResponseBodies: true,
+  insecureSkipTlsVerify: true,
   scenarios: {
     positif: {
       executor: 'constant-vus',
