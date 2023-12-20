@@ -9,7 +9,7 @@ export const options = {
       executor: 'constant-vus',
       exec: 'positif',
       vus: 1,
-      duration: '5m',
+      duration: '3m',
     }  
   },
 };
