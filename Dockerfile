@@ -1,5 +1,5 @@
-FROM grafana/xk6
+FROM loadimpact/k6
 
-COPY argo-rollouts/test-positif-negatif.js /
+COPY argo-rollouts/test-positif-negatif.js /test-positif-negatif.js
 
-CMD ["xk6", "run", "/test-positif-negatif.js"]
+CMD ["run", "/test-positif-negatif.js"]
