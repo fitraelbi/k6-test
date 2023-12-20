@@ -16,5 +16,4 @@ export const options = {
 
 export function positif() {
   http.get('https://nodejs-id.wallex.ninja/health/');
-  sleep(0.2)
 }
