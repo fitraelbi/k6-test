@@ -10,22 +10,10 @@ export const options = {
       exec: 'positif',
       vus: 1,
       duration: '3m',
-    },
-    // negatif: {
-    //     executor: 'constant-vus',
-    //     exec: 'negatif',
-    //     vus: 1,
-    //     duration: '5m',
-    // },
+    }  
   },
 };
 
 export function positif() {
-  http.get('http://test2.fitraelbi.xyz/');
-  // sleep(2)
-}
-
-export function negatif() {
-  http.get('http://test2.fitraelbi.xyz/salah');
-  sleep(60)
+  http.get('https://nodejs-id.wallex.ninja/health/');
 }
