@@ -20,6 +20,6 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
         
         - run: |
-            docker build . -t fitrakz/k6-test:wallex-web
-            docker push fitrakz/k6-test:wallex-web
+            docker build . -t fitrakz/k6-test:dummy-svc
+            docker push fitrakz/k6-test:dummy-svc
     
