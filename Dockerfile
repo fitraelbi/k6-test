@@ -4,6 +4,6 @@ RUN mkdir /app
 
 WORKDIR /app
 
-COPY wallex/test-positif.js /app
+COPY argo-rollouts/test-positif-negatif.js /app
 
-CMD ["k6", "/app/test-positif.js"]
+CMD ["k6", "/app/test-positif-negatif.js"]
