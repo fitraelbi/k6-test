@@ -15,5 +15,5 @@ export const options = {
 };
 
 export function positif() {
-  http.get('https://nodejs-id.wallex.ninja/health/');
+  http.get('https://testing.wallex.ninja/health/');
 }
