@@ -6,11 +6,17 @@ on:
 jobs:
   build:
     name: Run k6 test
+    strategy:
+      matrix:
+        url: [common-compliance-id.wallex.ninja, common-compliance-hk.wallex.ninja, common-compliance-sg.wallex.ninja]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Run k6 local test
         uses: grafana/k6-action@v0.3.1
         with:
-          filename: wallex/test-positif.js
+          filename: argo-rollouts/paralel.js
+        env:
+          HOSTNAME:  ${{ matrix.url }}
