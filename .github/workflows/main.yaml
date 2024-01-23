@@ -8,7 +8,7 @@ jobs:
     name: Run k6 test
     strategy:
       matrix:
-        url: [common-compliance-id.wallex.ninja, common-compliance-hk.wallex.ninja, common-compliance-sg.wallex.ninja]
+        url: [dummy-svc.fitraelbi.xyz]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

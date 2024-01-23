@@ -15,5 +15,5 @@ export const options = {
 };
 
 export function positif() {
-  http.get(`https://${__ENV.HOSTNAME}/health`);
+  http.get(`https://${__ENV.HOSTNAME}`);
 }
