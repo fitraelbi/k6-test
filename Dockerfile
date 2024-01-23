@@ -1,5 +1,5 @@
 FROM loadimpact/k6
 
-COPY wallex/test-positif.js /test-positif.js
+COPY argo-rollouts/negatif.js /test-negatif.js
 
-CMD ["run", "/test-positif.js"]
+CMD ["run", "/test-negatif.js"]

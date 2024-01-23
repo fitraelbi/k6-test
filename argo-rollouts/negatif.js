@@ -5,18 +5,18 @@ export const options = {
   discardResponseBodies: true,
   insecureSkipTlsVerify: true,
   scenarios: {
-    positif: {
-      executor: 'constant-vus',
-      exec: 'positif',
-      vus: 1,
-      duration: '3m',
-    },
-    // negatif: {
-    //     executor: 'constant-vus',
-    //     exec: 'negatif',
-    //     vus: 1,
-    //     duration: '5m',
+    // positif: {
+    //   executor: 'constant-vus',
+    //   exec: 'positif',
+    //   vus: 1,
+    //   duration: '3m',
     // },
+    negatif: {
+        executor: 'constant-vus',
+        exec: 'negatif',
+        vus: 1,
+        duration: '3m',
+    },
   },
 };
 
