@@ -1,5 +1,5 @@
 FROM loadimpact/k6
 
-COPY argo-rollouts/negatif.js /test-negatif.js
+COPY argo-rollouts/positif-test3.js /test-positif.js
 
-CMD ["run", "/test-negatif.js"]
+CMD ["run", "/test-positif.js"]

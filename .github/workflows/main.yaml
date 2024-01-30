@@ -1,22 +1,22 @@
-name: Main Workflow
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    name: Run k6 test
-    strategy:
-      matrix:
-        url: [dummy-svc.fitraelbi.xyz]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+# name: Main Workflow
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   build:
+#     name: Run k6 test
+#     strategy:
+#       matrix:
+#         url: [dummy-svc.fitraelbi.xyz]
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
       
-      - name: Run k6 local test
-        uses: grafana/k6-action@v0.3.1
-        with:
-          filename: argo-rollouts/paralel.js
-        env:
-          HOSTNAME:  ${{ matrix.url }}
+#       - name: Run k6 local test
+#         uses: grafana/k6-action@v0.3.1
+#         with:
+#           filename: argo-rollouts/paralel.js
+#         env:
+#           HOSTNAME:  ${{ matrix.url }}
