@@ -14,8 +14,8 @@ jobs:
       - name: Run k6 local test
         uses: grafana/k6-action@v0.3.1
         with:
-          filename: api-gateway/test.js
+          filename: api-gateway/test2.js
         env:
-          HOSTNAME: ${{ vars.HOSTNAME }}
-          AUTHORIZATION: ${{ vars.AUTHORIZATION }}
-          X_API_KEY: ${{ vars.X_API_KEY }}
+          HOSTNAME: ${{ vars.HOSTNAME2 }}
+          AUTHORIZATION: ${{ vars.AUTHORIZATION2 }}
+          X_API_KEY: ${{ vars.X_API_KEY2 }}
